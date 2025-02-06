@@ -1,37 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 Mazajy Track - Mood Tracking App
 
-## Getting Started
+A **Full-Stack Mood Tracking Application** built with **Next.js**, **Firebase**, and **TailwindCSS**. This app allows users to track their daily emotions, visualize mood trends, and manage their data in real-time with a clean and modern user interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌐 Personal Links
+- [🌐 LinkedIn](https://www.linkedin.com/in/lahcenelorf/)
+- [👨‍💻 GitHub](https://github.com/ELORF-Lahcen)
+
+---
+
+## 🔗 Technologies Used
+<div align="center">
+    <img src="https://img.shields.io/badge/Next.js-15.1.6-black?style=for-the-badge&logo=next.js&logoColor=white" />
+    <img src="https://img.shields.io/badge/Firebase-11.2.0-orange?style=for-the-badge&logo=firebase&logoColor=white" />
+    <img src="https://img.shields.io/badge/TailwindCSS-3.0-blue?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img src="https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react&logoColor=white" />
+</div>
+
+---
+
+## 📌 Features
+
+- 🔐 **User Authentication**: Secure login and signup using Firebase Authentication.
+- 📊 **Mood Tracking**: Log daily emotions and track mood trends over time.
+- 📈 **Data Visualization**: Visualize mood data with interactive charts.
+- 🎨 **Modern UI**: A clean and responsive design built with TailwindCSS.
+- 🔄 **Real-Time Updates**: Seamless data management with Firebase Firestore.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 15.1.6**: Framework for server-rendered React applications.
+- **Firebase 11.2.0**: For authentication and real-time database management.
+- **TailwindCSS**: Utility-first CSS framework for styling.
+- **React 19.0.0**: JavaScript library for building user interfaces.
+
+---
+
+## 🛠️ Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ELORF-Lahcen/mazajy-track.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   cd mazajy-track
+   npm install
+   ```
+3. **Set up Firebase**:
+   - Create a Firebase project at **Firebase Console**.
+   - Add your Firebase configuration in **firebase.js**.
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+5. **Open the app**:
+   - Visit **http://localhost:3000** in your browser.
+
+--- 
+
+## 📂 Project Structure
+
+```plaintext
+mazajy-track/
+├── app/                  # Next.js app directory
+├── components/           # Reusable React components
+├── context/              # React context for state management
+├── public/               # Static assets
+├── utils/                # Utility functions
+├── .gitignore            # Git ignore file
+├── README.md             # Project documentation
+├── eslint.config.mjs     # ESLint configuration
+├── firebase.js           # Firebase configuration
+├── jsconfig.json         # JavaScript configuration
+├── next.config.mjs       # Next.js configuration
+├── package-lock.json     # Dependency lock file
+├── package.json          # Project dependencies
+├── postcss.config.mjs    # PostCSS configuration
+└── tailwind.config.mjs   # TailwindCSS configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+--- 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1- **Home Page**
 
-## Learn More
+<img src="projectImages/home1.PNG" width="700" height="auto">
 
-To learn more about Next.js, take a look at the following resources:
+<img src="projectImages/home2.PNG" width="700" height="auto">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2- **Dashboard**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<img src="projectImages/dashboard1.PNG" width="700" height="auto">
 
-## Deploy on Vercel
+<img src="projectImages/dashboard2.PNG" width="700" height="auto">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3- **Signup Page**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# mazajy-track
+<img src="projectImages/signup.PNG" width="700" height="auto">
+
+3- **Login Page**
+
+<img src="projectImages/login.PNG" width="700" height="auto">
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please open a pull request.
+
+1. Fork the project.
+2. Create a new feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add YourFeature'`).
+4. Push to your branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+---
+
+👨‍💻 Made with ❤️ by [Lahcen ELORF](https://github.com/elorf-lahcen)
