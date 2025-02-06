@@ -1,34 +1,46 @@
-import { Fugaz_One, Inter } from "next/font/google";
+import { Fugaz_One, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { AuthProvider } from "@/context/AuthContext";
+import Head from "./head";
+import Logout from "@/components/Logout";
 
-const inter = Inter({ subsets: ["latin"]});
-const fugaz = Fugaz_One({ subsets: ["latin"], weight:['400']});
+const opensans = Open_Sans({ subsets: ["latin"] });
+const fugaz = Fugaz_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "MazajyTrack",
-  description: "Log your daily mood and gain insights into your emotional well-being!",
+  description: "Track your daily mood every day of the year!",
 };
 
 export default function RootLayout({ children }) {
   const header = (
     <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
-      <h1 className={'text-base sm:text-lg textGradient ' + fugaz.className}>Mazajy</h1>
+      <Link href={'/'}>
+        <h1 className={'text-base sm:text-lg textGradient ' + fugaz.className}>MazajyTrack</h1>
+      </Link>
+      <Logout />
     </header>
-  );
+  )
 
   const footer = (
     <footer className="p-4 sm:p-8 grid place-items-center">
-      Lahcen
+      <Link href={'https://github.com/ELORF-Lahcen'} target="_blank" className="">
+        <p className={'text-indigo-500 duration-200 hover:text-white hover:bg-indigo-500  ' + fugaz.className}>👨‍💻 Made with ❤️ by Lahcen ELORF</p>
+      </Link>
     </footer>
-  );
+  )
 
   return (
     <html lang="en">
-      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col' + inter.className }>
-        {header}
-        {children}
-        {footer}
-      </body>
+      <Head />
+      <AuthProvider>
+        <body className={'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-800  ' + opensans.className}>
+          {header}
+          {children}
+          {footer}
+        </body>
+      </AuthProvider>
     </html>
   );
 }
