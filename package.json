@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^11.2.0",
     "mazajy-track": "file:",
     "next": "15.1.6",
     "react": "^19.0.0",
